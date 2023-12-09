@@ -28,7 +28,7 @@ public class Checking extends Account {
         if (getBalance() + overdraftLimit >= amount) {
             super.withdraw(amount); // Withdraw from the account, including overdraft.
         } else {
-            System.out.println("Exceeded overdraft limit"); // Display an error message if the overdraft limit is exceeded.
+            System.out.println("Exceeded overdraft limit");
         }
     }
 
